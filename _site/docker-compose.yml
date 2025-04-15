@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  jekyll:
+    build:
+      context: .
+    volumes:
+      - .:/app
+    command: bundle exec jekyll build --verbose
